@@ -1,0 +1,243 @@
+/* Main Container */
+.tic-tac-toe-container {
+  min-height: 100vh;
+  
+  /* DARK THEME - Blue to Purple Gradient */
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  
+  /* LIGHT THEME - Soft Blue to Lavender */
+  background: linear-gradient(to bottom right, #eff6ff, #faf5ff);
+  
+  /* Alternative Light Theme - Warm Cream to Peach (Uncomment to use) */
+  /* background: linear-gradient(135deg, #fef3c7, #fed7aa); */
+  
+  /* Alternative Light Theme - Cool Mint to Sky (Uncomment to use) */
+  /* background: linear-gradient(135deg, #d1fae5, #bfdbfe); */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.game-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  max-width: 28rem;
+  width: 100%;
+}
+
+/* Header */
+.game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.trophy-icon {
+  color: #f59e0b;
+}
+
+.game-subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Game Mode Selector */
+.game-mode-selector {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mode-button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.mode-button-active {
+  background: #3b82f6;
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+}
+
+.mode-button-inactive {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.mode-button-inactive:hover {
+  background: #e5e7eb;
+}
+
+/* Single Player Settings */
+.single-player-settings {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  space-y: 1rem;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.setting-row:last-child {
+  margin-bottom: 0;
+}
+
+.setting-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.setting-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.difficulty-button,
+.first-player-button {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.difficulty-button-easy {
+  background: #10b981;
+  color: white;
+}
+
+.difficulty-button-impossible {
+  background: #ef4444;
+  color: white;
+}
+
+.difficulty-button-inactive,
+.first-player-button-inactive {
+  background: #e5e7eb;
+  color: #4b5563;
+}
+
+.difficulty-button-inactive:hover,
+.first-player-button-inactive:hover {
+  background: #d1d5db;
+}
+
+.first-player-button-active {
+  background: #3b82f6;
+  color: white;
+}
+
+/* Game Status */
+.game-status {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.status-playing {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.status-winner {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.status-draw {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #d97706;
+}
+
+/* Reset Button */
+.reset-button-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.reset-button {
+  background: #6b7280;
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+}
+
+.reset-button:hover {
+  background: #4b5563;
+}
+
+/* Game Info */
+.game-info {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.info-row {
+  margin-bottom: 0.25rem;
+}
+
+.info-row:last-child {
+  margin-bottom: 0;
+}
+
+.info-value {
+  font-weight: 500;
+}
+
+.player-x {
+  color: #3b82f6;
+}
+
+.player-o {
+  color: #ef4444;
+}
